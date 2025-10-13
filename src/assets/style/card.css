@@ -1,0 +1,105 @@
+.sec {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+.bv{
+    color: blueviolet;
+}
+.fluid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.sr-itm {
+  position: relative;
+  height: 42vh;
+  background: #111;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.sr-cont{
+  border: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Hover Effects */
+.sr-cont .sr-cont:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.sr-pdt:hover > .sr-cont:not(:hover) {
+  filter: blur(10px);
+  transform: scale(0.9);
+}
+
+/* Animated Border */
+/* @property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.sr-itm::after,
+.sr-itm::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  background-image: conic-gradient(from var(--angle), transparent 70%, blueviolet);
+  z-index: -1;
+  animation: spin 3s linear infinite;
+  opacity: 0;
+  padding: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.sr-itm::after {
+  filter: blur(0.5rem);
+  opacity: 0.5;
+} */
+
+
+
+@keyframes spin {
+  from { --angle: 0deg; }
+  to { --angle: 360deg; }
+}
+
+/* Responsive Grids */
+@media (max-width: 992px) {
+  .fluid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .fluid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .sr-itm {
+    min-height: 35vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .sr-itm {
+    min-height: 30vh;
+    padding: 0.8rem;
+  }
+}
