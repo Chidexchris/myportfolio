@@ -11,31 +11,31 @@ function Gallary() {
 
   <div class="gallery-item">
     <img src="../img/baber.PNG" alt="Project 1"/>
-    <h3>Project One</h3>
-    <a href="https://olisa-sh.netlify.app/">View Details</a>
+    <h3 className='text-white'>A barbing Salon</h3>
+    <a href="https://olisa-sh.netlify.app/">View </a>
   </div>
     </div>
     <div className="gallary-pdt">
 
   <div class="gallery-item">
     <img src="../img/sch001.PNG" alt="Project 2"/>
-    <h3>buiseness</h3>
-    <a href="#">View Details</a>
+    <h3 className='text-white'>A school website</h3>
+    <a href="#">View </a>
   </div>
   </div>
   <div className="gallary-pdt">
 
   <div class="gallery-item">
     <img src="../img/klean.PNG" alt="Project 3"/>
-    <h3>Project Three</h3>
-    <a href="#">View Details</a>
+    <h3 className='text-white'>A cleaning website </h3>
+    <a href="#">View </a>
   </div>
   </div>
 
   <div class="gallery-item">
     <img src="../img/est.PNG" alt="Project 4"/>
-    <h3>Project Four</h3>
-    <a href="#">View Details</a>
+    <h3 className='text-white'>A Restate website </h3>
+    <a href="#">View </a>
   </div>
 </div>
 

@@ -3,11 +3,12 @@ import Hero from '../components/Hero';
 import Side from '../components/Side';
 import '../assets/style/home.css'
 import Header from '../components/Header';
+import Modal from '../components/Model'
 
 function Home() {
   return (
     <>
-    <Header/>
+          <Header/>
    <section className='home' style={{display: 'flex', justifyContent:'space-evenly'}}>
    
        <SideBar/>
@@ -16,6 +17,7 @@ function Home() {
 
        
        </section>
+       <Modal/>
 
     </>
   )

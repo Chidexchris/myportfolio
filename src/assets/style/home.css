@@ -7,7 +7,7 @@
   background-color: #111;
   display: flex;
   margin: 0 auto;
-  padding: rem;
+  padding: 0.5rem;
   z-index: 99;
   box-sizing: border-box;
 }
@@ -47,7 +47,9 @@
     align-items: center;
     text-align: center;
   }
-
+  .hc{
+    top: 0;
+  }
   .ab-img {
     width: 200px;
   }
