@@ -1,4 +1,4 @@
-import '../assets/style/SideBar.css'
+import '../assets/style/Sidebar.css'
 
 
 function Header() {
