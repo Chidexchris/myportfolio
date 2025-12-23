@@ -5,7 +5,7 @@ import 'bootstrap-icons/font/bootstrap-icons.json';
 import '../assets/style/home.css'; 
 import TypingEffect from "../components/TypingEffect";
 import About from './About';
-import Cards from './cards';
+import Cards from './Cards';
 import Gallary from './Gallary';
 import Footer from './Footer';
 import { Link } from 'react-router-dom';
