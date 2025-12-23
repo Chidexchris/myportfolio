@@ -1,4 +1,4 @@
-import '../assets/style/SideBar.css';
+import '../assets/style/Sidebar.css';
 import React, { useEffect, useState } from 'react';
 
 function Side() {
