@@ -9,7 +9,7 @@ import me from "../assets/img/me.jpg";
 
 
 
-function SideBar() {
+function SideBar({ onClose }) {
   return (
     <>
         <div className="L-sidebar">
@@ -30,24 +30,24 @@ function SideBar() {
           </div>
           <div className="social">
             <ul className='social-ul'> 
-            <a target='blank' href="https://wa.me/message/R4UQNDGGZWDGJ1"><li><i class="bi bi-whatsapp">
+            <a target='blank' href="https://wa.me/message/R4UQNDGGZWDGJ1"><li><i className="bi bi-whatsapp">
               </i></li>
             </a>
             <a target='blank' href="https://www.facebook.com/chidera.ndulewo.9">
 
-            <li><i class="bi bi-facebook"></i></li>
+            <li><i className="bi bi-facebook"></i></li>
             </a>
             <a target='blank' href="https://www.instagram.com/deratech001/">
 
-            <li><i class="bi bi-instagram"></i></li>
+            <li><i className="bi bi-instagram"></i></li>
             </a>
             <a  target='blank'href="https://www.linkedin.com/in/chidera-ndulewo/">
 
-            <li><i class="bi bi-linkedin"></i></li>
+            <li><i className="bi bi-linkedin"></i></li>
             </a>
             <a  target='blank'href="christianchrisdav@gmail.com">
 
-            <li><i class="bi bi-envelope-at-fill"></i></li>
+            <li><i className="bi bi-envelope-at-fill"></i></li>
             </a>
             </ul>
           </div>

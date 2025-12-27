@@ -1,5 +1,100 @@
-.modal{
-  width: 300px;
-  height:auto;
-  z-index: 999;
+/* FLOATING BUTTON */
+.bottom-modal {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: none;
+}
+
+.bottom-modal img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* MOBILE ONLY */
+@media (max-width: 768px) {
+  .bottom-modal {
+    display: block;
+  }
+}
+
+/* OVERLAY */
+.profile-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CARD (SIDEBAR LOOK) */
+.profile-card {
+  background: rgb(1, 5, 8);
+  color: white;
+  width: 90%;
+  max-width: 410px;
+  border-radius: 30px;
+  padding: 20px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,.9);
+  position: relative;
+}
+
+/* CLOSE BUTTON */
+.profile-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+/* PROFILE IMAGE */
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+/* TEXT */
+.profile-title {
+  color: blueviolet;
+  font-size: 24px;
+  font-style: oblique;
+}
+
+.profile-text {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* SKILLS */
+.profile-skills {
+  list-style: square;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+/* SOCIALS */
+.profile-socials {
+  display: flex;
+  justify-content: space-around;
+  font-size: 28px;
+}
+
+.profile-socials i {
+  color: white;
+}
+
+.profile-socials i:hover {
+  color: blueviolet;
 }

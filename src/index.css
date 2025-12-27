@@ -117,5 +117,6 @@ body {
   body{
     max-width: 350px !important;
     overflow-y: hidden;
+    padding: 0 1rem;
   }
 }
