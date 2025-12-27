@@ -4,7 +4,7 @@ import '../assets/style/Sidebar.css'
 function Header() {
   return (
    <>
-   <div className="header">
+   <div className="header mb-4">
         <nav className='menu'>
           <ul className='m-icon'>
             <li><i className="bi bi-house ic" ></i></li>
